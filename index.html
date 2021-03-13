@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor IP/Geolocation Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="preloader.css" />
+    <style>
+      .no-script {
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 80%;
+        padding: 5%;
+        line-height: 1.5;
+        font-size: 4vmax;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        float: left;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <noscript>
+      <p class="no-script">JavaScript is disabled, please enable JavaScript.</p>
+      <meta http-equiv="refresh" content="5" />
+    </noscript>
+  </head>
+  <body>
+    <div class="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <section id="geoipSection">
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr class="th-row">
+              <th colspan="2">Visitor IP / Geolocation Details</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table id="geoipTable" cellpadding="0" cellspacing="0" border="0">
+          <tbody id="geoipTbody"></tbody>
+        </table>
+      </div>
+    </section>
+    <script type="text/javascript" src="ipgeo.js"></script>
+  </body>
+</html>
