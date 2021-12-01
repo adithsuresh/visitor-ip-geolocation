@@ -9,6 +9,9 @@ section {
 #geoipSection {
   display: none;
 }
+a#csvExport{
+  color: #bcfff0;
+}
 table {
   width: 100%;
   table-layout: fixed;

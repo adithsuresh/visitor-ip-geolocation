@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visitor IP/Geolocation Details</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <script type="text/javascript" src="client.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="preloader.css" />
     <style>
@@ -50,7 +52,15 @@
         <table cellpadding="0" cellspacing="0" border="0">
           <thead>
             <tr class="th-row">
-              <th colspan="2" style="font-weight: bold">Visitor IP / Geolocation Details</th>
+              <th colspan="2" style="font-weight: bold">
+                Visitor IP / Geolocation Details&emsp;&emsp;
+                <a
+                  id="csvExport"
+                  href="#"
+                  onclick="tableToCSV('#geoipTable', 'ipgeodata.csv');"
+                  >Export to CSV</a
+                >
+              </th>
             </tr>
           </thead>
         </table>
