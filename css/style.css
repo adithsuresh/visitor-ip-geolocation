@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(90deg, rgba(0, 121, 145, 1) 0%, rgba(120, 255, 214, 1) 100%);
+  font-family: BioRhyme, fontello, sans-serif;
+}
+section {
+  margin: 50px 10px;
+}
+#geoipSection {
+  display: none;
+}
+a#csvExport {
+  color: rgb(50, 125, 150);
+  float: right;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+  height: 75vh;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+tr:hover:not(.th-row) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  th {
+    font-size: 17px;
+  }
+  td {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 556px) {
+  a#csvExport {
+    float: unset;
+  }
+}
+
+@media (max-width: 320px) {
+  th {
+    font-size: 14px;
+  }
+  td {
+    font-size: 14px;
+  }
+}

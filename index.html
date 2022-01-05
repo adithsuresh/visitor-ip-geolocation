@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visitor IP/Geolocation Details</title>
-    <link rel="icon" href="/images/logo.png" type="image/png">
-    <script type="text/javascript" src="client.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="preloader.css" />
+    <link rel="canonical" href="index.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link
+      rel="preload"
+      href="./fonts/BioRhyme-Regular-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/BioRhyme-Regular-latin_ext.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <script type="text/javascript" src="./js/client.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/preloader.css" />
     <style>
       .no-script {
         color: rgba(255, 255, 255, 0.9);
@@ -34,6 +55,18 @@
       <p class="no-script">JavaScript is disabled, please enable JavaScript.</p>
       <meta http-equiv="refresh" content="5" />
     </noscript>
+    <script>
+      var ga = document.createElement("script");
+      ga.async = true;
+      ga.src = "https://www.googletagmanager.com/gtag/js?id=G-GJCHG84XCY";
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag("js", new Date());
+      window.gtag("config", "G-GJCHG84XCY");
+    </script>
   </head>
   <body>
     <div class="preloader">
@@ -53,13 +86,8 @@
           <thead>
             <tr class="th-row">
               <th colspan="2" style="font-weight: bold">
-                Visitor IP / Geolocation Details&emsp;&emsp;
-                <a
-                  id="csvExport"
-                  href="#"
-                  onclick="tableToCSV('#geoipTable', 'ipgeodata.csv');"
-                  >Export to CSV</a
-                >
+                <span>Visitor IP / Geolocation Details&emsp;&emsp;</span>
+                <a id="csvExport" href="#" onclick="tableToCSV('#geoipTable', 'ipgeodata.csv');">Export to CSV</a>
               </th>
             </tr>
           </thead>
@@ -71,6 +99,6 @@
         </table>
       </div>
     </section>
-    <script type="text/javascript" src="ipgeo.js"></script>
+    <script type="text/javascript" src="./js/ipgeo.js"></script>
   </body>
 </html>
